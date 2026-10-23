@@ -31,9 +31,9 @@
   "screenshots": [
     {
       "src": "/assets/laudo-risco-cirurgico-riscomed.webp",
-      "sizes": "1200x700",
+      "sizes": "898x648",
       "type": "image/webp",
-      "label": "Tela de conclusão do Risco MED e o laudo de risco cirúrgico gerado"
+      "label": "Etapa de conclusão do Risco MED: índices, recomendações e veredito"
     },
     {
       "src": "/assets/modelo-laudo-risco-cirurgico-moderno.webp",

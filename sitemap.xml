@@ -16,7 +16,7 @@
     <image:image>
       <image:loc>https://risco.med.br/assets/laudo-risco-cirurgico-riscomed.webp</image:loc>
       <image:title>Laudo de risco cirúrgico gerado pelo Risco MED</image:title>
-      <image:caption>Tela de conclusão do Risco MED e o laudo de risco cirúrgico pré-operatório gerado</image:caption>
+      <image:caption>Etapa de conclusão do Risco MED: índices calculados, recomendações perioperatórias e sugestão de veredito</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://risco.med.br/assets/tela-conclusao-laudo-risco-cirurgico.webp</image:loc>
