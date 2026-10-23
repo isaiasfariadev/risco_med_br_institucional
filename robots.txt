@@ -1,0 +1,10 @@
+# Todos os buscadores e assistentes de IA (Googlebot, Bingbot, GPTBot, OAI-SearchBot,
+# ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, PerplexityBot, Google-Extended etc.)
+# seguem esta regra geral. Não crie grupos com nome de robô: um grupo próprio substitui
+# esta regra inteira para aquele robô, inclusive os bloqueios abaixo.
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /admin/
+
+Sitemap: https://risco.med.br/sitemap.xml

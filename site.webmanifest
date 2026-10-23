@@ -1,0 +1,61 @@
+{
+  "name": "Risco MED — Laudo de Risco Cirúrgico Online",
+  "short_name": "Risco MED",
+  "description": "App online para gerar laudos de risco cirúrgico pré-operatório com 23 índices de risco. Sem mensalidade. Laudo em 3 minutos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#032450",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/laudo-risco-cirurgico-riscomed.webp",
+      "sizes": "1200x700",
+      "type": "image/webp",
+      "label": "Tela de conclusão do Risco MED e o laudo de risco cirúrgico gerado"
+    },
+    {
+      "src": "/assets/modelo-laudo-risco-cirurgico-moderno.webp",
+      "sizes": "1240x1754",
+      "type": "image/webp",
+      "label": "Exemplo de laudo de risco cirúrgico pré-operatório no layout Moderno"
+    }
+  ],
+  "categories": ["health", "medical"],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://app.risco.med.br"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Novo Laudo",
+      "short_name": "Novo laudo",
+      "description": "Iniciar geração de novo laudo de risco cirúrgico",
+      "url": "https://app.risco.med.br/",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

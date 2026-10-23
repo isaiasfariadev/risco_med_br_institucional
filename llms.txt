@@ -1,0 +1,77 @@
+# Risco MED
+
+> Avaliação pré-operatória completa: 23 índices validados, recomendações alinhadas à Diretriz SBC 2024 e laudo de risco cirúrgico pronto em minutos, assinado com ICP-Brasil e verificável por QR code. Software online para médicos, sem mensalidade: R$ 1,00 por laudo.
+
+Preenchimento inteligente: uma doença marcada em um índice já aparece marcada nos outros, a idade vem do cadastro, exames como creatinina, bilirrubina, INR e hemoglobina preenchem os índices e os betabloqueadores são reconhecidos na lista de medicamentos. O sistema sugere condutas de acordo com o risco (profilaxia de TEV, fisioterapia respiratória, investigação de apneia, profilaxia de náuseas, troponina e UTI para alto risco cardíaco, BNP/NT-proBNP conforme a Diretriz SBC 2024), alerta para medicamentos com risco de sangramento e sugere o veredito, avisando quando a escolha for menos conservadora que o risco calculado. A conclusão é sempre do médico. O laudo sai em um dos 5 modelos prontos ou no modelo com o logotipo da clínica, com CID-10, TUSS e SIGTAP integrados. É uma ferramenta para médicos: pacientes recebem o laudo do próprio médico.
+
+- Uso: cerca de 30 mil laudos emitidos, por médicos em todos os estados do Brasil (outubro de 2026).
+- Público: cardiologistas, clínicos, anestesiologistas, médicos de família e do trabalho, clínicas e hospitais no Brasil.
+- Índices: 23, em seis grupos (risco cardíaco, trombótico e sangramento, pulmonar e anestésico, fragilidade e comorbidades, hepático, desfecho cirúrgico), cada um com a tabela de referência e a citação científica.
+- Preço: pré-pago, sem mensalidade, adesão ou fidelidade; R$ 1,00 por laudo até 150 laudos/mês, acima disso sem custo; recarga por PIX; R$ 5,00 de crédito para começar e paciente de teste gratuito. A assinatura digital é opcional e custa R$ 0,50 por laudo assinado.
+- Assinatura e validação: certificado ICP-Brasil no próprio sistema, por enquanto do tipo A1 (MP 2.200-2/2001 e Lei 14.063/2020); qualquer pessoa confere a autenticidade por QR code ou link.
+- Rotina: acesso para secretária com permissões limitadas, rascunho salvo automaticamente, duplicar laudo anterior, histórico por paciente, impressão ao salvar e envio por e-mail.
+- Integração: gratuita com prontuários eletrônicos e outros sistemas, por API REST documentada; página de cadastro incorporável (embed).
+- Suporte: WhatsApp, videochamada agendada e central de ajuda.
+- Contato: comercial@risco.med.br · WhatsApp (37) 9 9999-7155 · cadastro em https://risco.med.br/#cadastro
+- Os índices e as sugestões apoiam, mas não substituem, o julgamento clínico do médico responsável.
+
+## Produto
+
+- [Página inicial](https://risco.med.br/): o que o Risco MED faz, funcionalidades, preços, exemplo de laudo e cadastro de médicos
+- [Funcionalidades](https://risco.med.br/funcionalidades/): 23 índices, itens sincronizados, exames que pré-marcam critérios, recomendações sugeridas, 5 modelos com logotipo e assinatura ICP-Brasil com QR code.
+- [Modelo de laudo de risco cirúrgico](https://risco.med.br/modelo-risco-cirurgico/): Modelo de laudo de risco cirúrgico para médicos: 23 índices (cardíaco, TEV, pulmonar, hepático e mais) calculados na hora. Gere o seu em cerca de 3 minutos.
+- [Exemplo de laudo em PDF](https://risco.med.br/assets/exemplo-laudo.pdf): laudo gerado pelo sistema, com paciente e médico fictícios
+- [Índices de risco cirúrgico](https://risco.med.br/indices-de-risco-cirurgico/): os 23 índices do Risco MED organizados por categoria
+
+## Índices: risco cardíaco
+
+- [EMAPO](https://risco.med.br/emapo-risco-cirurgico/): Índice EMAPO: como funciona o escore brasileiro de risco cirúrgico e os 5 níveis de risco, com exemplo.
+- [Lee (RCRI)](https://risco.med.br/indice-de-lee-rcri/): Índice de Lee (RCRI): como funciona, classes de risco e o que muda na diretriz SBC 2024, com exemplo.
+- [ASA](https://risco.med.br/asa-risco-cirurgico/): Classificação ASA do estado físico (ASA I a VI e sufixo E): como funciona e como registrá-la no laudo de risco cirúrgico do Risco MED.
+- [ACP](https://risco.med.br/acp-risco-cirurgico/): Algoritmo do American College of Physicians para risco cirúrgico: variáveis de Detsky, critérios de Eagle e Vanzetto e classes de risco, com exemplo.
+- [Goldman](https://risco.med.br/goldman-risco-cirurgico/): Índice de risco cardíaco de Goldman: como funciona, exemplos de variáveis e as classes I a IV. Calculado automaticamente no laudo do Risco MED.
+- [Detsky](https://risco.med.br/detsky-risco-cirurgico/): Índice de Detsky modificado: como funciona, exemplos de variáveis e classes de risco cardíaco. Calculado automaticamente no laudo do Risco MED.
+- [Larsen](https://risco.med.br/larsen-risco-cirurgico/): Índice de Larsen de risco cardíaco em cirurgia não cardíaca: como funciona, exemplos de variáveis e classes.
+- [NSQIP-MICA (Gupta)](https://risco.med.br/nsqip-mica-risco-cirurgico/): Calculadora NSQIP-MICA (Gupta): risco de infarto ou parada cardíaca até 30 dias após a cirurgia, com variáveis, fórmula e exemplo. Para médicos.
+- [AUB-HAS2](https://risco.med.br/aub-has2-risco-cirurgico/): AUB-HAS2: 6 variáveis, classes de risco com taxas de óbito, IAM e AVC em 30 dias, papel na diretriz SBC 2024 e exemplo.
+- [VSG-CRI](https://risco.med.br/vsg-cri-cirurgia-vascular/): VSG-CRI: variáveis, pontos, classes de risco (SBC 2024) e comparação com o índice de Lee em cirurgia vascular, com exemplo.
+- [DASI](https://risco.med.br/dasi-capacidade-funcional/): DASI (Duke Activity Status Index): 12 itens, conversão em METs, ponto de corte 34 do estudo METS no pré-operatório.
+
+## Índices: trombótico e sangramento
+
+- [Caprini](https://risco.med.br/escore-de-caprini/): Escore de Caprini: variáveis, categorias de risco de TEV e profilaxia sugerida pela ACCP 2012 em cirurgia, com exemplo.
+- [Pádua](https://risco.med.br/escore-de-padua/): Escore de Pádua: risco de TEV no paciente clínico internado, ponto de corte ≥4, limites no pré-operatório e exemplo.
+- [IMPROVE-VTE](https://risco.med.br/improve-vte/): IMPROVE-VTE: escore de risco de TEV em pacientes clínicos internados, classes de risco, uso no perioperatório e exemplo.
+- [IMPROVE-Bleeding](https://risco.med.br/improve-bleeding/): IMPROVE-Bleeding: risco de sangramento no paciente clínico internado, corte de 7 pontos e uso com Pádua e IMPROVE-VTE.
+
+## Índices: pulmonar e anestésico
+
+- [ARISCAT](https://risco.med.br/ariscat-risco-pulmonar/): ARISCAT: as 7 variáveis, pontos de corte e risco de complicações pulmonares pós-operatórias, com exemplo e limitações.
+- [STOP-Bang](https://risco.med.br/stop-bang/): STOP-Bang: os 8 itens, estratos de risco de apneia obstrutiva do sono e implicações perioperatórias, com exemplo.
+- [Apfel](https://risco.med.br/escore-de-apfel/): Escore de Apfel: os 4 fatores de risco de náuseas e vômitos pós-operatórios (NVPO), interpretação e profilaxia.
+
+## Índices: fragilidade e comorbidades
+
+- [Escala Clínica de Fragilidade (CFS)](https://risco.med.br/escala-clinica-de-fragilidade/): Escala Clínica de Fragilidade (CFS) de Rockwood: os 9 níveis, ponto de corte e impacto no risco cirúrgico do idoso.
+- [Charlson](https://risco.med.br/indice-de-charlson/): Índice de Comorbidade de Charlson: pontos por condição, ajuste por idade e mortalidade em 1 ano no estudo original.
+
+## Índices: hepático
+
+- [Child-Pugh](https://risco.med.br/child-pugh-risco-cirurgico/): Child-Pugh no risco cirúrgico: os 5 critérios, as classes A, B e C e a mortalidade em cirurgia abdominal na cirrose.
+- [MELD](https://risco.med.br/meld-risco-cirurgico/): MELD e MELD-Na: fórmula, variáveis e uso na previsão de mortalidade pós-operatória na cirrose (Mayo, Teh 2007).
+
+## Índices: desfecho cirúrgico
+
+- [P-POSSUM](https://risco.med.br/p-possum/): P-POSSUM: escores fisiológico e operatório, equações de mortalidade e morbidade, diferença para o POSSUM e exemplo.
+
+## Guias
+
+- [Como fazer o laudo](https://risco.med.br/como-fazer-laudo-risco-cirurgico/): Para médicos: o que o laudo de risco cirúrgico deve conter, como estratificar o risco, redigir recomendações e a conclusão, e o que pedir ao solicitante.
+- [CID para risco cirúrgico](https://risco.med.br/cid-risco-cirurgico/): Qual CID usar no risco cirúrgico e na avaliação pré-operatória? Veja os códigos mais usados e gere o laudo completo com até 23 índices em cerca de 3 minutos.
+- [Assinatura digital e validação](https://risco.med.br/assinatura-digital-laudo-medico/): Laudo de risco cirúrgico assinado com certificado ICP-Brasil, compatível com o validador do ITI e com validação por QR code. Veja como validar.
+
+## Optional
+
+- [Documentação completa](https://risco.med.br/llms-full.txt): contexto clínico, comercial e técnico detalhado, resumo de cada índice e perguntas frequentes
+- [Mapa do site](https://risco.med.br/sitemap.xml): todas as URLs públicas
+- [humans.txt](https://risco.med.br/humans.txt): equipe, produto e tecnologia
