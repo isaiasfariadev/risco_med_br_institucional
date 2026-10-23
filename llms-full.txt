@@ -263,7 +263,7 @@ Lista completa: https://risco.med.br/funcionalidades/
 ### Pagamento, suporte e integração
 - Pré-pago por laudo, sem mensalidade; recarga por PIX (Mercado Pago); cupons de desconto; programa "Indique e ganhe".
 - Ajuda pelo WhatsApp, videochamada de suporte agendada e central de ajuda dentro do sistema.
-- Integração gratuita com outros sistemas por API REST documentada (inclusive o prontuário YES Médicos), com apoio da equipe à equipe de TI, e página de cadastro incorporável (embed).
+- Integração gratuita com outros sistemas por API REST documentada (inclusive o prontuário YES Médicos), com apoio da equipe à equipe de TI (documentação para desenvolvedores: https://risco.med.br/integracao/), e página de cadastro incorporável (embed).
 
 ### Acesso
 - 100% web e responsivo: funciona em computador, tablet e celular com navegador e internet. Não funciona offline.

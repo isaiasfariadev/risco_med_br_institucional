@@ -232,7 +232,7 @@
           "name": "Posso integrar com meu prontuário eletrônico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim. A integração com outros sistemas é gratuita, por meio de uma API REST documentada, e a página de cadastro pode ser incorporada ao site da clínica. Se você é médico, fale com a equipe de TI do seu prontuário; se é desenvolvedor, entre em contato conosco para receber a documentação."
+            "text": "Sim. A integração com outros sistemas é gratuita, por meio de uma API REST documentada, e a página de cadastro pode ser incorporada ao site da clínica. Se você é médico, fale com a equipe de TI do seu prontuário; se é desenvolvedor, a documentação da integração está em https://risco.med.br/integracao/."
           }
         },
         {
@@ -333,7 +333,7 @@
     <link rel="preload" as="image" href="/assets/laudo-risco-cirurgico-riscomed.webp?v=2" imagesrcset="/assets/laudo-risco-cirurgico-riscomed-640.webp?v=2 640w, /assets/laudo-risco-cirurgico-riscomed.webp?v=2 898w" imagesizes="(max-width: 1024px) calc(100vw - 32px), 640px" fetchpriority="high">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/styles.min.css?v=485f8fd6">
+    <link rel="stylesheet" href="/assets/styles.min.css?v=433df284">
     
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6VSKC6B75"></script>
@@ -837,7 +837,10 @@
                     </div>
                     
                     <div class="integration-cta">
-                        <a href="https://wa.me/5537999997155?text=Olá, gostaria de informações sobre integração API." class="btn btn-primary">Solicitar Integração</a>
+                        <div class="integration-actions">
+                            <a href="/integracao/" class="btn btn-primary">Ver documentação da API</a>
+                            <a href="https://wa.me/5537999997155?text=Olá, gostaria de informações sobre integração API." class="btn btn-outline">Solicitar Integração</a>
+                        </div>
                         <p class="integration-note">Se você é médico, fale com a equipe de TI do seu prontuário</p>
                     </div>
                 </div>
@@ -1010,7 +1013,7 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Sim. A integração com outros sistemas é gratuita, por meio de uma API REST documentada, e a página de cadastro pode ser incorporada ao site da clínica. Se você é médico, fale com a equipe de TI do seu prontuário; se é desenvolvedor, entre em contato conosco para receber a documentação.</p>
+                        <p>Sim. A integração com outros sistemas é gratuita, por meio de uma API REST documentada, e a página de cadastro pode ser incorporada ao site da clínica. Se você é médico, fale com a equipe de TI do seu prontuário; se é desenvolvedor, consulte a <a href="/integracao/">documentação da integração</a>.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1058,6 +1061,7 @@
                             <li><a href="#indices">Índices</a></li>
                             <li><a href="#precos">Preços</a></li>
                             <li><a href="#integracao">Integração</a></li>
+                            <li><a href="/integracao/">Documentação da API</a></li>
                             <li><a href="#exemplo">Exemplo de Laudo</a></li>
                             <li><a href="/funcionalidades/">Todas as Funcionalidades</a></li>
                             <li><a href="/indices-de-risco-cirurgico/">Índices de Risco Cirúrgico</a></li>

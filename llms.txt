@@ -10,7 +10,7 @@ Preenchimento inteligente: uma doença marcada em um índice já aparece marcada
 - Preço: pré-pago, sem mensalidade, adesão ou fidelidade; R$ 1,00 por laudo até 150 laudos/mês, acima disso sem custo; recarga por PIX; R$ 5,00 de crédito para começar e paciente de teste gratuito. A assinatura digital é opcional e custa R$ 0,50 por laudo assinado.
 - Assinatura e validação: certificado ICP-Brasil no próprio sistema, por enquanto do tipo A1 (MP 2.200-2/2001 e Lei 14.063/2020); qualquer pessoa confere a autenticidade por QR code ou link.
 - Rotina: acesso para secretária com permissões limitadas, rascunho salvo automaticamente, duplicar laudo anterior, histórico por paciente, impressão ao salvar e envio por e-mail.
-- Integração: gratuita com prontuários eletrônicos e outros sistemas, por API REST documentada; página de cadastro incorporável (embed).
+- Integração: gratuita com prontuários eletrônicos e outros sistemas, por API REST documentada (https://risco.med.br/integracao/); página de cadastro incorporável (embed).
 - Suporte: WhatsApp, videochamada agendada e central de ajuda.
 - Contato: comercial@risco.med.br · WhatsApp (37) 9 9999-7155 · cadastro em https://risco.med.br/#cadastro
 - Os índices e as sugestões apoiam, mas não substituem, o julgamento clínico do médico responsável.
