@@ -700,3 +700,6 @@ td.pts { white-space: nowrap; font-weight: 700; color: var(--gray-900); }
 .step-card h3 { font-size: 1.1rem; color: var(--gray-900); margin-bottom: 0.4rem; }
 .step-card p { color: var(--gray-600); line-height: 1.6; margin: 0; }
 @media (max-width: 900px) { .steps-grid { grid-template-columns: 1fr; } }
+
+/* Exemplo com uma só página (modelo) */
+.laudo-preview.laudo-preview-single { grid-template-columns: minmax(0, 560px); justify-content: center; }
