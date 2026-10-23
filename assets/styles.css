@@ -2066,3 +2066,9 @@ p {
     font-size: 0.8rem;
     color: var(--gray-400);
 }
+
+/* Exemplo com um só modelo */
+.laudo-preview.laudo-preview-single {
+    grid-template-columns: minmax(0, 520px);
+    justify-content: center;
+}
