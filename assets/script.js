@@ -478,3 +478,12 @@ if ('serviceWorker' in navigator) {
             });
         });
         
+
+// Sign-up iframe (portal.risco.med.br/registro/embed): fit its height to the form
+window.addEventListener('message', function (e) {
+    if (e.origin !== 'https://portal.risco.med.br') return;
+    var frame = document.getElementById('riscomed-cadastro');
+    if (frame && e.data && e.data.type === 'signup:height' && Number(e.data.height) > 0) {
+        frame.style.height = Math.ceil(Number(e.data.height)) + 'px';
+    }
+});

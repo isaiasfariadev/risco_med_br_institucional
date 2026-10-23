@@ -10,7 +10,7 @@
 
 - **Nome do produto:** Risco MED
 - **URL:** https://risco.med.br
-- **App:** https://app.risco.med.br
+- **App:** https://portal.risco.med.br
 - **Empresa:** Risco MED (empresa independente)
 - **País:** Brasil
 - **Idioma:** Português Brasileiro (pt-BR)

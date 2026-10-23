@@ -8,7 +8,7 @@
 }
 
 :root {
-    /* RiscoMED brand palette (navy + teal + green), aligned with app.risco.med.br */
+    /* RiscoMED brand palette (navy + teal + green), aligned with portal.risco.med.br */
     --primary: #0e7490;      /* teal/petrol, app primary */
     --primary-dark: #032450; /* navy, logo "Risco" */
     --secondary: #16a34a;    /* green, app accent */

@@ -46,7 +46,7 @@
   "related_applications": [
     {
       "platform": "web",
-      "url": "https://app.risco.med.br"
+      "url": "https://portal.risco.med.br"
     }
   ],
   "shortcuts": [
@@ -54,7 +54,7 @@
       "name": "Novo Laudo",
       "short_name": "Novo laudo",
       "description": "Iniciar geração de novo laudo de risco cirúrgico",
-      "url": "https://app.risco.med.br/",
+      "url": "https://portal.risco.med.br/",
       "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
     }
   ]
