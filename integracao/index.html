@@ -101,7 +101,7 @@
             <h1>API de integração do Risco MED</h1>
             <p>Documentação para desenvolvedores de prontuários eletrônicos e outros sistemas. A integração é gratuita, por meio de uma API REST, e a página de cadastro de médicos também pode ser incorporada ao site da clínica ou do parceiro. Precisa de ajuda? <a href="https://wa.me/5537999997155?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20integra%C3%A7%C3%A3o%20API." data-cta="integracao-whatsapp">Fale com a equipe pelo WhatsApp</a>.</p>
 
-            <iframe id="riscomed-integracao" class="docs-embed" src="https://portal.risco.med.br/integracao" title="Documentação da API de integração do Risco MED" loading="lazy"></iframe>
+            <iframe id="riscomed-integracao" class="docs-embed" src="https://app.risco.med.br/integracao" title="Documentação da API de integração do Risco MED" loading="lazy"></iframe>
 
             <div class="sources"><p>Se você é médico e quer integrar o Risco MED ao seu prontuário, encaminhe esta página à equipe de TI do sistema que você usa.</p></div>
         </div>
@@ -127,7 +127,7 @@
     <script>
       // Fit the docs iframe to its content when the portal reports its height
       window.addEventListener('message', function (e) {
-        if (e.origin !== 'https://portal.risco.med.br') return;
+        if (e.origin !== 'https://app.risco.med.br') return;
         var f = document.getElementById('riscomed-integracao');
         if (f && e.data && e.data.type === 'docs:height' && Number(e.data.height) > 0) f.style.height = Math.ceil(Number(e.data.height)) + 'px';
       });

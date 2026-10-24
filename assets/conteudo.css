@@ -8,7 +8,7 @@
 }
 
 :root {
-    /* RiscoMED brand palette (navy + teal + green), aligned with portal.risco.med.br */
+    /* RiscoMED brand palette (navy + teal + green), aligned with app.risco.med.br */
     --primary: #0e7490;      /* teal/petrol, app primary */
     --primary-dark: #032450; /* navy, logo "Risco" */
     --secondary: #16a34a;    /* green, app accent */
@@ -704,6 +704,6 @@ td.pts { white-space: nowrap; font-weight: 700; color: var(--gray-900); }
 /* Exemplo com uma só página (modelo) */
 .laudo-preview.laudo-preview-single { grid-template-columns: minmax(0, 560px); justify-content: center; }
 
-/* /integracao/: developer docs embedded from portal.risco.med.br */
+/* /integracao/: developer docs embedded from app.risco.med.br */
 .article.article-wide .container { max-width: 1200px; }
 .docs-embed { display: block; width: 100%; height: 85vh; min-height: 700px; border: 1px solid var(--gray-200); border-radius: 12px; background: #fff; margin: 1.5rem 0; }
