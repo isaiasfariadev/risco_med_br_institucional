@@ -1201,6 +1201,12 @@ p {
     gap: 16px;
 }
 
+.integration-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 .integration-note {
     font-size: 0.875rem;
     color: var(--gray-500);

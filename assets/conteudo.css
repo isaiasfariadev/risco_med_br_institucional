@@ -703,3 +703,7 @@ td.pts { white-space: nowrap; font-weight: 700; color: var(--gray-900); }
 
 /* Exemplo com uma só página (modelo) */
 .laudo-preview.laudo-preview-single { grid-template-columns: minmax(0, 560px); justify-content: center; }
+
+/* /integracao/: developer docs embedded from app.risco.med.br */
+.article.article-wide .container { max-width: 1200px; }
+.docs-embed { display: block; width: 100%; height: 85vh; min-height: 700px; border: 1px solid var(--gray-200); border-radius: 12px; background: #fff; margin: 1.5rem 0; }
