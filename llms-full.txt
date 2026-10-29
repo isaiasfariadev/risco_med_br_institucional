@@ -249,7 +249,8 @@ Lista completa: https://risco.med.br/funcionalidades/
 - Procedimentos e médicos solicitantes já usados pelo médico aparecem primeiro.
 
 ### Laudo com a cara da clínica
-- 5 modelos prontos (Moderno, Clássico, Básico, Minimalista e Compacto) e editor de modelo próprio com logotipo, cabeçalho e dados da clínica.
+- 5 modelos prontos (Ilustrado Premium, Moderno, Clássico, Básico e Compacto) e editor de modelo próprio com logotipo, cabeçalho e dados da clínica.
+- Modelo Ilustrado Premium (opcional): nos 23 índices, uma barra colorida com as categorias de cada escore mostra a categoria do paciente, ao lado da pontuação e da referência.
 - Texto final editável antes de emitir; troca de modelo por laudo; frases salvas por campo; conjuntos de exames complementares configuráveis.
 
 ### Assinatura e validação
@@ -295,7 +296,7 @@ Por enquanto, certificados ICP-Brasil do tipo A1 (arquivo instalado no computado
 ## Páginas do site
 
 - https://risco.med.br/ — página principal do produto.
-- https://risco.med.br/modelo-risco-cirurgico/ — modelo e exemplo de laudo de risco cirúrgico, com PDF de exemplo.
+- https://risco.med.br/modelo-risco-cirurgico/ — modelo e exemplo de laudo de risco cirúrgico (modelo Ilustrado Premium, dados fictícios).
 - https://risco.med.br/cid-risco-cirurgico/ — qual CID usar no risco cirúrgico.
 - https://risco.med.br/emapo-risco-cirurgico/ — índice EMAPO.
 - https://risco.med.br/detsky-risco-cirurgico/ — índice de Detsky modificado.
@@ -348,4 +349,3 @@ Por enquanto, certificados ICP-Brasil do tipo A1 (arquivo instalado no computado
 - https://risco.med.br/llms-full.txt — este arquivo
 - https://risco.med.br/sitemap.xml — mapa do site
 - https://risco.med.br/robots.txt — permissões de rastreamento (todos os robôs de busca e de IA são permitidos)
-- https://risco.med.br/assets/exemplo-laudo.pdf — exemplo de laudo gerado

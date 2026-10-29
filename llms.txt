@@ -20,7 +20,6 @@ Preenchimento inteligente: uma doença marcada em um índice já aparece marcada
 - [Página inicial](https://risco.med.br/): o que o Risco MED faz, funcionalidades, preços, exemplo de laudo e cadastro de médicos
 - [Funcionalidades](https://risco.med.br/funcionalidades/): 23 índices, itens sincronizados, exames que pré-marcam critérios, recomendações sugeridas, 5 modelos com logotipo e assinatura ICP-Brasil com QR code.
 - [Modelo de laudo de risco cirúrgico](https://risco.med.br/modelo-risco-cirurgico/): Modelo de laudo de risco cirúrgico para médicos: 23 índices (cardíaco, TEV, pulmonar, hepático e mais) calculados na hora. Gere o seu em cerca de 3 minutos.
-- [Exemplo de laudo em PDF](https://risco.med.br/assets/exemplo-laudo.pdf): laudo gerado pelo sistema, com paciente e médico fictícios
 - [Índices de risco cirúrgico](https://risco.med.br/indices-de-risco-cirurgico/): os 23 índices do Risco MED organizados por categoria
 
 ## Índices: risco cardíaco
