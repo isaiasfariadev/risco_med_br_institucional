@@ -65,6 +65,7 @@ Preenchimento inteligente: uma doença marcada em um índice já aparece marcada
 
 ## Guias
 
+- [Diretrizes SBC no laudo](https://risco.med.br/diretrizes-sbc-risco-cirurgico/): Para médicos: como a Diretriz SBC 2024 de avaliação perioperatória e a Diretriz Brasileira de Insuficiência Cardíaca 2026 entram no laudo pré-operatório (BNP/NT-proBNP, FEVE < 50%, deficiência de ferro, medicamentos a rever e iSGLT2).
 - [Como fazer o laudo](https://risco.med.br/como-fazer-laudo-risco-cirurgico/): Para médicos: o que o laudo de risco cirúrgico deve conter, como estratificar o risco, redigir recomendações e a conclusão, e o que pedir ao solicitante.
 - [CID para risco cirúrgico](https://risco.med.br/cid-risco-cirurgico/): Qual CID usar no risco cirúrgico e na avaliação pré-operatória? Veja os códigos mais usados e gere o laudo completo com até 23 índices em cerca de 3 minutos.
 - [Assinatura digital e validação](https://risco.med.br/assinatura-digital-laudo-medico/): Laudo de risco cirúrgico assinado com certificado ICP-Brasil, compatível com o validador do ITI e com validação por QR code. Veja como validar.

@@ -322,6 +322,7 @@ Por enquanto, certificados ICP-Brasil do tipo A1 (arquivo instalado no computado
 - https://risco.med.br/meld-risco-cirurgico/ — MELD.
 - https://risco.med.br/p-possum/ — P-POSSUM.
 - https://risco.med.br/funcionalidades/ — todas as funcionalidades do Risco MED.
+- https://risco.med.br/diretrizes-sbc-risco-cirurgico/ — diretrizes SBC 2024 (avaliação perioperatória) e IC 2026 no laudo: recomendações pré-marcadas que o médico revisa.
 - https://risco.med.br/como-fazer-laudo-risco-cirurgico/ — como fazer o laudo de risco cirúrgico, passo a passo.
 - https://risco.med.br/vsg-cri-cirurgia-vascular/ — VSG-CRI.
 - https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital ICP-Brasil e validação no ITI.
