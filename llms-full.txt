@@ -2,7 +2,9 @@
 
 > Versão estendida do llms.txt, com o contexto clínico, técnico e comercial do Risco MED. O Risco MED é um software brasileiro para médicos gerarem o laudo de risco cirúrgico (avaliação pré-operatória) com 23 índices de risco calculados automaticamente (cardíaco, trombótico e de sangramento, pulmonar, fragilidade, hepático e desfecho cirúrgico), assinado digitalmente com certificado ICP-Brasil e compatível com o validador oficial do ITI.
 
-Última atualização: 19 de outubro de 2026.
+O Risco MED é uma ferramenta de cálculo e de elaboração de laudos de risco cirúrgico pré-operatório. Ele não sugere, não recomenda e não indica nenhuma conduta, diagnóstico, tratamento ou decisão clínica. Ele aplica aos dados que o médico registra os índices e critérios publicados na literatura médica e em diretrizes médicas e mostra os resultados. O médico analisa os resultados e toma todas as decisões.
+
+Última atualização: 8 de novembro de 2026.
 
 ---
 
@@ -39,7 +41,7 @@ O Risco MED gera, em cerca de 3 minutos, o laudo de risco cirúrgico com até 23
 
 A avaliação de risco cirúrgico (avaliação pré-operatória) estima o risco de complicações, principalmente cardiovasculares, antes de uma cirurgia não cardíaca. Feita manualmente, exige calcular cada índice separadamente e redigir o laudo, o que é demorado, sujeito a erro de cálculo e gera documentos sem padrão.
 
-No Risco MED, o médico responde uma vez: os itens comuns ficam sincronizados entre os índices, os exames pré-marcam os critérios, o sistema sugere recomendações perioperatórias e avisa quando a conclusão está mais leve que o risco calculado. O laudo sai no modelo da clínica, pronto para assinatura ICP-Brasil, validação por QR code e envio.
+No Risco MED, o médico responde uma vez: os itens comuns ficam sincronizados entre os índices, os exames preenchem os critérios e as recomendações vêm de uma biblioteca de textos de diretrizes com referência, que o médico escolhe. O laudo sai no modelo da clínica, pronto para assinatura ICP-Brasil, validação por QR code e envio.
 
 ---
 
@@ -64,7 +66,7 @@ Hospitais, prontos-socorros e clínicas com alto volume podem pedir condições 
 
 ## Os 23 índices de risco cirúrgico
 
-Resumo do conteúdo das páginas de cada índice no site. Os índices apoiam, mas não substituem, o julgamento clínico.
+Resumo do conteúdo das páginas de cada índice no site. O Risco MED calcula os índices e mostra os resultados; o médico analisa e toma todas as decisões.
 
 ### EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)
 Página: https://risco.med.br/emapo-risco-cirurgico/
@@ -236,16 +238,16 @@ Lista completa: https://risco.med.br/funcionalidades/
 - O médico escolhe quais índices usar; cada índice tem a tabela de referência e a citação científica a um clique.
 - Resultado ao vivo, com barra colorida, enquanto o médico responde.
 
-### Inteligência clínica (apoio à decisão; a conclusão é sempre do médico)
+### Preenchimento e cálculo (a conclusão e a conduta são sempre do médico)
 - Responda uma vez, use em todos os índices: uma doença marcada em um índice já aparece marcada nos outros, e achados específicos marcam os itens equivalentes.
-- Exames que preenchem os índices: hemoglobina, plaquetas, creatinina, ureia, eletrólitos, bilirrubina, albumina e INR pré-marcam os itens correspondentes.
+- Exames que preenchem os índices: hemoglobina, plaquetas, creatinina, ureia, eletrólitos, bilirrubina, albumina e INR preenchem os itens correspondentes.
 - Idade e sexo automáticos a partir do cadastro; corrigir os dados do paciente sem sair do laudo recalcula tudo; betabloqueadores reconhecidos na lista de medicamentos; IMC e superfície corporal calculados, com classificação colorida.
-- Alerta automático de medicamentos em uso com risco de sangramento; a decisão de suspender é do médico.
-- Recomendações baseadas na diretriz, sugeridas de acordo com o risco calculado: profilaxia de TEV, fisioterapia respiratória, investigação de apneia, profilaxia de náuseas, troponina e UTI para alto risco cardíaco, BNP/NT-proBNP conforme a Diretriz SBC 2024, suspensão de anticoagulante, fragilidade e hepatopatia. O médico marca, desmarca, edita e cria as suas.
-- Veredito em um clique (Liberado, Liberado com ressalvas ou Não liberado), com sugestão baseada nos índices e aviso quando a escolha for menos conservadora que o risco calculado; frases salvas para a conclusão e para as observações do procedimento.
+- Medicamentos em uso que constam na lista de fármacos com risco de sangramento ficam destacados; a decisão de suspender é do médico.
+- As recomendações vêm de uma biblioteca de textos de diretrizes e índices publicados, cada um com a sua referência. Nenhum vem marcado: só entra no laudo o que o médico marcar. Os textos cujos critérios, definidos nas próprias publicações, correspondem aos dados registrados aparecem primeiro na lista. Temas: profilaxia de TEV, fisioterapia respiratória, investigação de apneia, profilaxia de náuseas, troponina e UTI no alto risco cardíaco, BNP/NT-proBNP (Diretriz SBC 2024), suspensão de anticoagulante, fragilidade, hepatopatia e insuficiência cardíaca (Diretriz Brasileira de Insuficiência Cardíaca 2026). O médico marca, edita e cria os seus.
+- Conclusão em um clique (Liberado, Liberado com ressalvas ou Não liberado), escolhida pelo médico, sem pré-seleção; frases salvas para a conclusão e para as observações do procedimento.
 
 ### Tabelas oficiais integradas
-- CID-10 (DATASUS) para o diagnóstico; TUSS (ANS) e SIGTAP (SUS) para o procedimento, com busca enquanto digita; medicamentos registrados na ANVISA.
+- CID-10 (DATASUS) para o diagnóstico; TUSS (ANS) e SIGTAP (SUS) para o procedimento, com busca enquanto digita; lista de medicamentos comercializados no Brasil.
 - Procedimentos e médicos solicitantes já usados pelo médico aparecem primeiro.
 
 ### Laudo com a cara da clínica
@@ -322,7 +324,7 @@ Por enquanto, certificados ICP-Brasil do tipo A1 (arquivo instalado no computado
 - https://risco.med.br/meld-risco-cirurgico/ — MELD.
 - https://risco.med.br/p-possum/ — P-POSSUM.
 - https://risco.med.br/funcionalidades/ — todas as funcionalidades do Risco MED.
-- https://risco.med.br/diretrizes-sbc-risco-cirurgico/ — diretrizes SBC 2024 (avaliação perioperatória) e IC 2026 no laudo: recomendações pré-marcadas que o médico revisa.
+- https://risco.med.br/diretrizes-sbc-risco-cirurgico/ — diretrizes SBC 2024 (avaliação perioperatória) e IC 2026: textos com referência que o médico escolhe para o laudo.
 - https://risco.med.br/como-fazer-laudo-risco-cirurgico/ — como fazer o laudo de risco cirúrgico, passo a passo.
 - https://risco.med.br/vsg-cri-cirurgia-vascular/ — VSG-CRI.
 - https://risco.med.br/assinatura-digital-laudo-medico/ — assinatura digital ICP-Brasil e validação no ITI.

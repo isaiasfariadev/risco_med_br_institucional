@@ -1,8 +1,10 @@
 # Risco MED
 
-> Avaliação pré-operatória completa: 23 índices validados, recomendações alinhadas à Diretriz SBC 2024 e laudo de risco cirúrgico pronto em minutos, assinado com ICP-Brasil e verificável por QR code. Software online para médicos, sem mensalidade: R$ 1,00 por laudo.
+> Laudo de risco cirúrgico pré-operatório pronto em minutos: 23 índices publicados, calculados a partir dos dados que o médico registra, biblioteca de textos de diretrizes com referência, que o médico escolhe, e assinatura ICP-Brasil verificável por QR code. Software online para médicos, sem mensalidade: R$ 1,00 por laudo.
 
-Preenchimento inteligente: uma doença marcada em um índice já aparece marcada nos outros, a idade vem do cadastro, exames como creatinina, bilirrubina, INR e hemoglobina preenchem os índices e os betabloqueadores são reconhecidos na lista de medicamentos. O sistema sugere condutas de acordo com o risco (profilaxia de TEV, fisioterapia respiratória, investigação de apneia, profilaxia de náuseas, troponina e UTI para alto risco cardíaco, BNP/NT-proBNP conforme a Diretriz SBC 2024), alerta para medicamentos com risco de sangramento e sugere o veredito, avisando quando a escolha for menos conservadora que o risco calculado. A conclusão é sempre do médico. O laudo sai em um dos 5 modelos prontos ou no modelo com o logotipo da clínica, com CID-10, TUSS e SIGTAP integrados. É uma ferramenta para médicos: pacientes recebem o laudo do próprio médico.
+O Risco MED é uma ferramenta de cálculo e de elaboração de laudos de risco cirúrgico pré-operatório. Ele não sugere, não recomenda e não indica nenhuma conduta, diagnóstico, tratamento ou decisão clínica. Ele aplica aos dados que o médico registra os índices e critérios publicados na literatura médica e em diretrizes médicas e mostra os resultados. O médico analisa os resultados e toma todas as decisões.
+
+Preenchimento inteligente: uma doença marcada em um índice já aparece marcada nos outros, a idade vem do cadastro, exames como creatinina, bilirrubina, INR e hemoglobina preenchem os índices e os betabloqueadores são reconhecidos na lista de medicamentos. As recomendações vêm de uma biblioteca de textos de diretrizes e índices publicados, cada um com a sua referência. Nenhum vem marcado: só entra no laudo o que o médico marcar. Os textos cujos critérios, definidos nas próprias publicações, correspondem aos dados registrados aparecem primeiro na lista. A conclusão (Liberado, Liberado com ressalvas ou Não liberado) é escolhida pelo médico. O laudo sai em um dos 5 modelos prontos ou no modelo com o logotipo da clínica, com CID-10, TUSS e SIGTAP integrados. É uma ferramenta para médicos: pacientes recebem o laudo do próprio médico.
 
 - Uso: cerca de 30 mil laudos emitidos, por médicos em todos os estados do Brasil (outubro de 2026).
 - Público: cardiologistas, clínicos, anestesiologistas, médicos de família e do trabalho, clínicas e hospitais no Brasil.
@@ -13,12 +15,12 @@ Preenchimento inteligente: uma doença marcada em um índice já aparece marcada
 - Integração: gratuita com prontuários eletrônicos e outros sistemas, por API REST documentada (https://risco.med.br/integracao/); página de cadastro incorporável (embed).
 - Suporte: WhatsApp, videochamada agendada e central de ajuda.
 - Contato: comercial@risco.med.br · WhatsApp (37) 9 9999-7155 · cadastro em https://risco.med.br/#cadastro
-- Os índices e as sugestões apoiam, mas não substituem, o julgamento clínico do médico responsável.
+- O Risco MED calcula os índices e mostra os resultados; o médico analisa e toma todas as decisões.
 
 ## Produto
 
 - [Página inicial](https://risco.med.br/): o que o Risco MED faz, funcionalidades, preços, exemplo de laudo e cadastro de médicos
-- [Funcionalidades](https://risco.med.br/funcionalidades/): 23 índices, itens sincronizados, exames que pré-marcam critérios, recomendações sugeridas, 5 modelos com logotipo e assinatura ICP-Brasil com QR code.
+- [Funcionalidades](https://risco.med.br/funcionalidades/): 23 índices, itens sincronizados, exames que preenchem os critérios, textos de diretrizes com referência, 5 modelos com logotipo e assinatura ICP-Brasil com QR code.
 - [Modelo de laudo de risco cirúrgico](https://risco.med.br/modelo-risco-cirurgico/): Modelo de laudo de risco cirúrgico para médicos: 23 índices (cardíaco, TEV, pulmonar, hepático e mais) calculados na hora. Gere o seu em cerca de 3 minutos.
 - [Índices de risco cirúrgico](https://risco.med.br/indices-de-risco-cirurgico/): os 23 índices do Risco MED organizados por categoria
 
@@ -65,7 +67,7 @@ Preenchimento inteligente: uma doença marcada em um índice já aparece marcada
 
 ## Guias
 
-- [Diretrizes SBC no laudo](https://risco.med.br/diretrizes-sbc-risco-cirurgico/): Para médicos: como a Diretriz SBC 2024 de avaliação perioperatória e a Diretriz Brasileira de Insuficiência Cardíaca 2026 entram no laudo pré-operatório (BNP/NT-proBNP, FEVE < 50%, deficiência de ferro, medicamentos a rever e iSGLT2).
+- [Diretrizes SBC no laudo](https://risco.med.br/diretrizes-sbc-risco-cirurgico/): Para médicos: o que a Diretriz SBC 2024 de avaliação perioperatória e a Diretriz Brasileira de Insuficiência Cardíaca 2026 mudam no laudo pré-operatório (BNP/NT-proBNP, FEVE < 50%, deficiência de ferro, medicamentos a rever e iSGLT2), com a referência de cada texto.
 - [Como fazer o laudo](https://risco.med.br/como-fazer-laudo-risco-cirurgico/): Para médicos: o que o laudo de risco cirúrgico deve conter, como estratificar o risco, redigir recomendações e a conclusão, e o que pedir ao solicitante.
 - [CID para risco cirúrgico](https://risco.med.br/cid-risco-cirurgico/): Qual CID usar no risco cirúrgico e na avaliação pré-operatória? Veja os códigos mais usados e gere o laudo completo com até 23 índices em cerca de 3 minutos.
 - [Assinatura digital e validação](https://risco.med.br/assinatura-digital-laudo-medico/): Laudo de risco cirúrgico assinado com certificado ICP-Brasil, compatível com o validador do ITI e com validação por QR code. Veja como validar.

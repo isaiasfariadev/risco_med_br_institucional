@@ -33,13 +33,13 @@
       "src": "/assets/laudo-risco-cirurgico-riscomed.webp",
       "sizes": "898x648",
       "type": "image/webp",
-      "label": "Etapa de conclusão do Risco MED: índices, recomendações e veredito"
+      "label": "Tela de conclusão do Risco MED: índices calculados e textos de diretrizes com referência (dados fictícios)"
     },
     {
-      "src": "/assets/modelo-laudo-risco-cirurgico-moderno.webp",
-      "sizes": "1240x1754",
+      "src": "/assets/modelo-laudo-risco-cirurgico-ilustrado-premium.webp",
+      "sizes": "1240x1658",
       "type": "image/webp",
-      "label": "Exemplo de laudo de risco cirúrgico pré-operatório no layout Moderno"
+      "label": "Exemplo de laudo de risco cirúrgico no modelo Ilustrado Premium (dados fictícios)"
     }
   ],
   "categories": ["health", "medical"],
