@@ -77,7 +77,7 @@ src="https://www.facebook.com/tr?id=1791600551184602&ev=PageView&noscript=1"/></
         "@id": "https://risco.med.br/escore-de-caprini/#breadcrumb"
       },
       "datePublished": "2026-10-19",
-      "dateModified": "2026-10-19",
+      "dateModified": "2026-11-12",
       "author": {
         "@id": "https://risco.med.br/#organization"
       },
@@ -203,13 +203,92 @@ src="https://www.facebook.com/tr?id=1791600551184602&ev=PageView&noscript=1"/></
         <div class="container">
             <nav class="breadcrumb" aria-label="Você está em"><ol><li><a href="/">Início</a></li><li><a href="/indices-de-risco-cirurgico/">Índices de risco cirúrgico</a></li><li><span aria-current="page">Caprini</span></li></ol></nav>
             <h1>Escore de Caprini: risco de TEV no paciente cirúrgico e profilaxia</h1>
-            <p class="updated">Atualizado em <time datetime="2026-10-19">19 de outubro de 2026</time></p>
+            <p class="updated">Atualizado em <time datetime="2026-11-12">12 de novembro de 2026</time></p>
             <p>O <strong>escore de Caprini</strong> é um modelo de avaliação do risco de tromboembolismo venoso (TEV) em pacientes cirúrgicos, que soma pontos de fatores do paciente e do procedimento. Difundido na versão publicada por Caprini em 2005, passou a orientar a profilaxia em cirurgia geral e abdominopélvica na diretriz do American College of Chest Physicians (ACCP) de 2012.</p>
 
             <aside class="cta-inline" aria-label="escore de Caprini no Risco MED">
-                <p><strong>O escore de Caprini já está incluído no Risco MED.</strong> Preencha os dados do paciente uma vez e o laudo de risco cirúrgico sai com o escore de Caprini calculado automaticamente, junto com os demais índices, assinado com certificado ICP-Brasil.</p>
-                <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Gerar laudo com escore de Caprini</a>
+                <p><strong>Calcule o escore de Caprini abaixo, ou faça o laudo completo.</strong> No Risco MED, você preenche os dados do paciente uma vez e o escore de Caprini é calculado junto com outros 22 índices, direto no laudo de risco cirúrgico, assinado com certificado ICP-Brasil.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="calc-antes">Fazer o laudo completo</a>
             </aside>
+
+            <h2 id="calculadora">Calculadora do escore de Caprini</h2>
+            <p>Escolha a faixa de idade e marque os fatores presentes. A pontuação e a categoria de risco aparecem na hora.</p>
+            <style>
+.rc-calc h3 { margin: 1.25rem 0 0.6rem; font-size: 1.05rem; }
+.rc-calc h3:first-child { margin-top: 0; }
+.rc-list { display: grid; gap: 0.5rem; }
+.rc-list label { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.6rem 0.75rem; border: 1px solid var(--gray-200); border-radius: 10px; background: #fff; cursor: pointer; font-weight: 400; color: var(--gray-800); line-height: 1.4; }
+.rc-list label:has(input:checked) { border-color: var(--primary); background: #f0f9fb; }
+.rc-list label.rc-auto { opacity: 0.75; cursor: default; }
+.rc-list input[type=checkbox] { width: 1.15rem; height: 1.15rem; margin-top: 0.15rem; flex: none; accent-color: var(--primary); }
+.rc-pts { margin-left: auto; padding-left: 0.5rem; font-weight: 700; color: var(--primary-dark); white-space: nowrap; }
+.rc-select { display: grid; gap: 0.35rem; font-weight: 600; color: var(--gray-800); margin-bottom: 0.5rem; }
+.rc-select select { font: inherit; font-weight: 400; padding: 0.6rem 0.7rem; border: 1px solid var(--gray-300); border-radius: 10px; background: #fff; }
+.rc-calc .mica-result { position: sticky; bottom: 0.5rem; z-index: 5; padding: 0.6rem 0.9rem; gap: 0.1rem; box-shadow: 0 8px 24px rgba(3, 36, 80, 0.18); }
+.rc-calc .mica-result strong { font-size: 1.5rem; }
+.rc-calc .mica-result .mica-label { font-size: 0.75rem; }
+#rc-note { font-size: 0.85rem; color: var(--gray-600); }
+.rc-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: baseline; }
+.rc-class { font-size: 1.15rem; font-weight: 700; color: var(--gray-900); }
+.rc-reset { justify-self: start; margin-top: 0.15rem; background: none; border: 0; padding: 0; color: var(--primary-dark); text-decoration: underline; font: inherit; font-size: 0.9rem; cursor: pointer; }
+.rc-cta { margin: 1.25rem 0 0; padding: 1rem 1.25rem; border-radius: 12px; background: var(--gray-900, #0f1f33); color: #fff; display: grid; gap: 0.75rem; }
+.rc-cta p { margin: 0; color: #fff; }
+.rc-cta .btn { justify-self: start; }
+</style>
+            <form class="mica-calc rc-calc" id="rc-calc" novalidate data-bands='[[0, "Muito baixo", "Risco basal estimado de TEV sem profilaxia: < 0,5% (ACCP 2012)"], [1, "Baixo", "Risco basal estimado de TEV sem profilaxia: ~1,5% (ACCP 2012)"], [3, "Moderado", "Risco basal estimado de TEV sem profilaxia: ~3,0% (ACCP 2012)"], [5, "Alto", "Risco basal estimado de TEV sem profilaxia: ~6,0% (ACCP 2012)"]]'><label class="rc-select" for="rc-age">Idade<select id="rc-age"><option value="0">Até 40 anos (0 pontos)</option><option value="1">Idade de 41 a 60 anos (1 ponto)</option><option value="2">Idade de 61 a 74 anos (2 pontos)</option><option value="3">Idade ≥75 anos (3 pontos)</option></select></label><div><h3>Fatores de 1 ponto</h3><div class="rc-list"><label for="rc-0"><input type="checkbox" id="rc-0" data-pts="1"><span>Cirurgia de pequeno porte</span><span class="rc-pts">+1</span></label><label for="rc-1"><input type="checkbox" id="rc-1" data-pts="1"><span>Índice de massa corporal (IMC) &gt;25 kg/m²</span><span class="rc-pts">+1</span></label><label for="rc-2"><input type="checkbox" id="rc-2" data-pts="1"><span>Cirurgia de grande porte prévia (&lt;1 mês)</span><span class="rc-pts">+1</span></label><label for="rc-3"><input type="checkbox" id="rc-3" data-pts="1"><span>Varizes de membros inferiores</span><span class="rc-pts">+1</span></label><label for="rc-4"><input type="checkbox" id="rc-4" data-pts="1"><span>História de doença inflamatória intestinal</span><span class="rc-pts">+1</span></label><label for="rc-5"><input type="checkbox" id="rc-5" data-pts="1"><span>Edema atual de membros inferiores</span><span class="rc-pts">+1</span></label><label for="rc-6"><input type="checkbox" id="rc-6" data-pts="1"><span>Infarto agudo do miocárdio</span><span class="rc-pts">+1</span></label><label for="rc-7"><input type="checkbox" id="rc-7" data-pts="1"><span>Insuficiência cardíaca congestiva (&lt;1 mês)</span><span class="rc-pts">+1</span></label><label for="rc-8"><input type="checkbox" id="rc-8" data-pts="1"><span>Sepse (&lt;1 mês)</span><span class="rc-pts">+1</span></label><label for="rc-9"><input type="checkbox" id="rc-9" data-pts="1"><span>Doença pulmonar grave, incluindo pneumonia (&lt;1 mês)</span><span class="rc-pts">+1</span></label><label for="rc-10"><input type="checkbox" id="rc-10" data-pts="1"><span>Função pulmonar anormal (doença pulmonar obstrutiva crônica, DPOC)</span><span class="rc-pts">+1</span></label><label for="rc-11"><input type="checkbox" id="rc-11" data-pts="1"><span>Paciente clínico atualmente em repouso no leito</span><span class="rc-pts">+1</span></label><label for="rc-12"><input type="checkbox" id="rc-12" data-pts="1"><span>Outros fatores de risco</span><span class="rc-pts">+1</span></label><label for="rc-13"><input type="checkbox" id="rc-13" data-pts="1"><span>Somente mulheres: contraceptivo oral ou terapia de reposição hormonal</span><span class="rc-pts">+1</span></label><label for="rc-14"><input type="checkbox" id="rc-14" data-pts="1"><span>Somente mulheres: gestação ou puerpério (&lt;1 mês)</span><span class="rc-pts">+1</span></label><label for="rc-15"><input type="checkbox" id="rc-15" data-pts="1"><span>Somente mulheres: história de natimorto sem causa aparente, abortamentos espontâneos de repetição (≥3), parto prematuro com toxemia ou recém-nascido com restrição de crescimento</span><span class="rc-pts">+1</span></label></div></div><div><h3>Fatores de 2 pontos</h3><div class="rc-list"><label for="rc-16"><input type="checkbox" id="rc-16" data-pts="2"><span>Cirurgia artroscópica</span><span class="rc-pts">+2</span></label><label for="rc-17"><input type="checkbox" id="rc-17" data-pts="2"><span>Neoplasia maligna (atual ou prévia)</span><span class="rc-pts">+2</span></label><label for="rc-18"><input type="checkbox" id="rc-18" data-pts="2"><span>Cirurgia de grande porte (&gt;45 minutos)</span><span class="rc-pts">+2</span></label><label for="rc-19"><input type="checkbox" id="rc-19" data-pts="2"><span>Cirurgia laparoscópica (&gt;45 minutos)</span><span class="rc-pts">+2</span></label><label for="rc-20"><input type="checkbox" id="rc-20" data-pts="2"><span>Paciente restrito ao leito (&gt;72 horas)</span><span class="rc-pts">+2</span></label><label for="rc-21"><input type="checkbox" id="rc-21" data-pts="2"><span>Imobilização com aparelho gessado (&lt;1 mês)</span><span class="rc-pts">+2</span></label><label for="rc-22"><input type="checkbox" id="rc-22" data-pts="2"><span>Acesso venoso central</span><span class="rc-pts">+2</span></label></div></div><div><h3>Fatores de 3 pontos</h3><div class="rc-list"><label for="rc-23"><input type="checkbox" id="rc-23" data-pts="3"><span>História de trombose venosa profunda ou embolia pulmonar</span><span class="rc-pts">+3</span></label><label for="rc-24"><input type="checkbox" id="rc-24" data-pts="3"><span>História familiar de trombose</span><span class="rc-pts">+3</span></label><label for="rc-25"><input type="checkbox" id="rc-25" data-pts="3"><span>Fator V de Leiden positivo</span><span class="rc-pts">+3</span></label><label for="rc-26"><input type="checkbox" id="rc-26" data-pts="3"><span>Mutação G20210A da protrombina positiva</span><span class="rc-pts">+3</span></label><label for="rc-27"><input type="checkbox" id="rc-27" data-pts="3"><span>Homocisteína sérica elevada</span><span class="rc-pts">+3</span></label><label for="rc-28"><input type="checkbox" id="rc-28" data-pts="3"><span>Anticoagulante lúpico positivo</span><span class="rc-pts">+3</span></label><label for="rc-29"><input type="checkbox" id="rc-29" data-pts="3"><span>Anticorpos anticardiolipina elevados</span><span class="rc-pts">+3</span></label><label for="rc-30"><input type="checkbox" id="rc-30" data-pts="3"><span>Trombocitopenia induzida por heparina</span><span class="rc-pts">+3</span></label><label for="rc-31"><input type="checkbox" id="rc-31" data-pts="3"><span>Outra trombofilia congênita ou adquirida</span><span class="rc-pts">+3</span></label></div></div><div><h3>Fatores de 5 pontos</h3><div class="rc-list"><label for="rc-32"><input type="checkbox" id="rc-32" data-pts="5"><span>Artroplastia eletiva de grande porte de membro inferior</span><span class="rc-pts">+5</span></label><label for="rc-33"><input type="checkbox" id="rc-33" data-pts="5"><span>Fratura de quadril, pelve ou perna (&lt;1 mês)</span><span class="rc-pts">+5</span></label><label for="rc-34"><input type="checkbox" id="rc-34" data-pts="5"><span>Acidente vascular cerebral (&lt;1 mês)</span><span class="rc-pts">+5</span></label><label for="rc-35"><input type="checkbox" id="rc-35" data-pts="5"><span>Politrauma (&lt;1 mês)</span><span class="rc-pts">+5</span></label><label for="rc-36"><input type="checkbox" id="rc-36" data-pts="5"><span>Lesão medular aguda com paralisia (&lt;1 mês)</span><span class="rc-pts">+5</span></label></div></div><div class="mica-result" aria-live="polite"><span class="mica-label">Escore de Caprini</span><div class="rc-row"><strong id="rc-score">0 pontos</strong><span class="rc-class" id="rc-class"></span></div><span id="rc-note"></span><button type="button" class="rc-reset" id="rc-reset">Limpar</button></div><p class="mica-disclaimer">O Risco MED calcula a pontuação e mostra a classe publicada para o índice; o médico analisa e decide.</p></form>
+            <div class="rc-cta"><p><strong>Este é 1 de 23 índices.</strong> No Risco MED, os mesmos dados calculam o escore de Caprini e outros 22 índices de uma vez, e o laudo sai completo e profissional, com a sua logo e assinatura digital. O sistema calcula e mostra os resultados; o médico revisa e decide.</p><a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="calc-depois">Criar conta com R$ 5,00 de crédito</a></div>
+            <script>
+(function () {
+    var f = document.getElementById('rc-calc');
+    if (!f) return;
+    var bands = JSON.parse(f.getAttribute('data-bands'));
+    var links = JSON.parse(f.getAttribute('data-links') || '{}');
+    function syncLinks() {
+        Object.keys(links).forEach(function (target) {
+            var t = document.getElementById(target), on = links[target].some(function (id) { return document.getElementById(id).checked; });
+            if (on) { t.checked = true; t.disabled = true; t.closest('label').classList.add('rc-auto'); t.dataset.auto = '1'; }
+            else if (t.dataset.auto) { t.checked = false; t.disabled = false; t.closest('label').classList.remove('rc-auto'); delete t.dataset.auto; }
+        });
+    }
+    function sum(scope) {
+        var s = 0;
+        f.querySelectorAll((scope ? '[data-step="' + scope + '"] ' : '') + 'input[type=checkbox]:checked').forEach(function (i) { s += parseFloat(i.getAttribute('data-pts')) || 0; });
+        f.querySelectorAll((scope ? '[data-step="' + scope + '"] ' : '') + 'select').forEach(function (i) { s += parseFloat(i.value) || 0; });
+        return s;
+    }
+    function pick(n) { var b = bands[0]; bands.forEach(function (x) { if (n >= x[0]) b = x; }); return b; }
+    function update() {
+        syncLinks();
+        var total, b, txt, extra = '';
+        if (f.getAttribute('data-mode') === 'acp') {
+            var detsky = sum('1');
+            if (detsky > 15) { b = bands[2]; txt = 'Detsky ' + detsky + ' pontos'; }
+            else { var n = f.querySelectorAll('[data-step="2"] input:checked').length; b = n >= 2 ? bands[1] : bands[0];
+                   txt = 'Detsky ' + detsky + ' pontos'; extra = ' · ' + n + (n === 1 ? ' variável' : ' variáveis') + ' de Eagle/Vanzetto'; }
+        } else {
+            total = sum(); b = pick(total); txt = total + (total === 1 ? ' ponto' : ' pontos');
+        }
+        document.getElementById('rc-score').textContent = txt;
+        document.getElementById('rc-class').textContent = b[1];
+        document.getElementById('rc-note').textContent = b[2] + extra;
+    }
+    f.addEventListener('change', update);
+    f.addEventListener('submit', function (e) { e.preventDefault(); });
+    document.getElementById('rc-reset').addEventListener('click', function () {
+        f.querySelectorAll('input[type=checkbox]').forEach(function (i) { i.checked = false; i.disabled = false; delete i.dataset.auto; i.closest('label').classList.remove('rc-auto'); });
+        f.querySelectorAll('select').forEach(function (s) { s.selectedIndex = 0; });
+        update();
+    });
+    var used = false;
+    f.addEventListener('change', function () {
+        if (used || typeof gtag === 'undefined') return;
+        used = true;
+        gtag('event', 'calculator_use', { 'event_category': 'engagement', 'event_label': location.pathname });
+    });
+    update();
+})();
+</script>
+
 
             <h2>Variáveis do escore de Caprini</h2>
             <p>Cada fator de risco presente soma 1, 2, 3 ou 5 pontos, e o resultado é a soma de todos os fatores:</p>

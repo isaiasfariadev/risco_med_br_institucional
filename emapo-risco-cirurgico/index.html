@@ -77,7 +77,7 @@ src="https://www.facebook.com/tr?id=1791600551184602&ev=PageView&noscript=1"/></
         "@id": "https://risco.med.br/emapo-risco-cirurgico/#breadcrumb"
       },
       "datePublished": "2026-10-13",
-      "dateModified": "2026-10-13",
+      "dateModified": "2026-11-12",
       "author": {
         "@id": "https://risco.med.br/#organization"
       },
@@ -205,13 +205,92 @@ src="https://www.facebook.com/tr?id=1791600551184602&ev=PageView&noscript=1"/></
         <div class="container">
             <nav class="breadcrumb" aria-label="Você está em"><ol><li><a href="/">Início</a></li><li><a href="/indices-de-risco-cirurgico/">Índices de risco cirúrgico</a></li><li><span aria-current="page">EMAPO</span></li></ol></nav>
             <h1>Índice EMAPO: como funciona o escore de risco cirúrgico</h1>
-            <p class="updated">Atualizado em <time datetime="2026-10-13">13 de outubro de 2026</time></p>
+            <p class="updated">Atualizado em <time datetime="2026-11-12">12 de novembro de 2026</time></p>
             <p>O <strong>EMAPO (Estudo Multicêntrico de Avaliação Perioperatória)</strong> é um escore brasileiro de risco cardiovascular para cirurgias não cardíacas. Cada condição clínica ou cirúrgica presente soma pontos, e o total classifica o paciente em cinco níveis de risco de óbito e/ou eventos cardíacos.</p>
 
             <aside class="cta-inline" aria-label="EMAPO no Risco MED">
-                <p><strong>O EMAPO já está incluído no Risco MED.</strong> Preencha os dados do paciente uma vez e o laudo de risco cirúrgico sai com o EMAPO calculado automaticamente, junto com os demais índices, assinado com certificado ICP-Brasil.</p>
-                <a href="https://risco.med.br/#cadastro" class="btn btn-primary">Gerar laudo com EMAPO</a>
+                <p><strong>Calcule o EMAPO abaixo, ou faça o laudo completo.</strong> No Risco MED, você preenche os dados do paciente uma vez e o EMAPO é calculado junto com outros 22 índices, direto no laudo de risco cirúrgico, assinado com certificado ICP-Brasil.</p>
+                <a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="calc-antes">Fazer o laudo completo</a>
             </aside>
+
+            <h2 id="calculadora">Calculadora EMAPO</h2>
+            <p>Marque as condições presentes no paciente. A pontuação e o nível de risco aparecem na hora.</p>
+            <style>
+.rc-calc h3 { margin: 1.25rem 0 0.6rem; font-size: 1.05rem; }
+.rc-calc h3:first-child { margin-top: 0; }
+.rc-list { display: grid; gap: 0.5rem; }
+.rc-list label { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.6rem 0.75rem; border: 1px solid var(--gray-200); border-radius: 10px; background: #fff; cursor: pointer; font-weight: 400; color: var(--gray-800); line-height: 1.4; }
+.rc-list label:has(input:checked) { border-color: var(--primary); background: #f0f9fb; }
+.rc-list label.rc-auto { opacity: 0.75; cursor: default; }
+.rc-list input[type=checkbox] { width: 1.15rem; height: 1.15rem; margin-top: 0.15rem; flex: none; accent-color: var(--primary); }
+.rc-pts { margin-left: auto; padding-left: 0.5rem; font-weight: 700; color: var(--primary-dark); white-space: nowrap; }
+.rc-select { display: grid; gap: 0.35rem; font-weight: 600; color: var(--gray-800); margin-bottom: 0.5rem; }
+.rc-select select { font: inherit; font-weight: 400; padding: 0.6rem 0.7rem; border: 1px solid var(--gray-300); border-radius: 10px; background: #fff; }
+.rc-calc .mica-result { position: sticky; bottom: 0.5rem; z-index: 5; padding: 0.6rem 0.9rem; gap: 0.1rem; box-shadow: 0 8px 24px rgba(3, 36, 80, 0.18); }
+.rc-calc .mica-result strong { font-size: 1.5rem; }
+.rc-calc .mica-result .mica-label { font-size: 0.75rem; }
+#rc-note { font-size: 0.85rem; color: var(--gray-600); }
+.rc-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: baseline; }
+.rc-class { font-size: 1.15rem; font-weight: 700; color: var(--gray-900); }
+.rc-reset { justify-self: start; margin-top: 0.15rem; background: none; border: 0; padding: 0; color: var(--primary-dark); text-decoration: underline; font: inherit; font-size: 0.9rem; cursor: pointer; }
+.rc-cta { margin: 1.25rem 0 0; padding: 1rem 1.25rem; border-radius: 12px; background: var(--gray-900, #0f1f33); color: #fff; display: grid; gap: 0.75rem; }
+.rc-cta p { margin: 0; color: #fff; }
+.rc-cta .btn { justify-self: start; }
+</style>
+            <form class="mica-calc rc-calc" id="rc-calc" novalidate data-bands='[[0, "Muito baixo", "Óbito e/ou eventos cardíacos: < 1%"], [1, "Baixo", "Óbito e/ou eventos cardíacos: < 3%"], [6, "Moderado", "Óbito e/ou eventos cardíacos: < 7%"], [11, "Elevado", "Óbito e/ou eventos cardíacos: 7% a 13%"], [16, "Muito elevado", "Óbito e/ou eventos cardíacos: > 13%"]]'><div><div class="rc-list"><label for="rc-0"><input type="checkbox" id="rc-0" data-pts="4"><span>Cirurgia intraperitoneal, intratorácica, da aorta e seus ramos ou ortopédica de grande porte</span><span class="rc-pts">+4</span></label><label for="rc-1"><input type="checkbox" id="rc-1" data-pts="5"><span>Idade acima de 70 anos</span><span class="rc-pts">+5</span></label><label for="rc-2"><input type="checkbox" id="rc-2" data-pts="5"><span>Infarto do miocárdio há mais de 6 meses</span><span class="rc-pts">+5</span></label><label for="rc-3"><input type="checkbox" id="rc-3" data-pts="5"><span>Fibrilação atrial crônica, taquiarritmias atriais paroxísticas ou taquicardia ventricular não sustentada documentada</span><span class="rc-pts">+5</span></label><label for="rc-4"><input type="checkbox" id="rc-4" data-pts="4"><span>Paciente inativo e acamado</span><span class="rc-pts">+4</span></label><label for="rc-5"><input type="checkbox" id="rc-5" data-pts="4"><span>Hipertensão arterial sistêmica com hipertrofia ventricular esquerda e alteração de ST-T</span><span class="rc-pts">+4</span></label><label for="rc-6"><input type="checkbox" id="rc-6" data-pts="4"><span>Acidente vascular cerebral isquêmico há menos de 3 meses</span><span class="rc-pts">+4</span></label><label for="rc-7"><input type="checkbox" id="rc-7" data-pts="4"><span>Diabetes melito com nefropatia ou cardiopatia, ou em uso de insulina</span><span class="rc-pts">+4</span></label><label for="rc-8"><input type="checkbox" id="rc-8" data-pts="4"><span>Doença arterial coronariana crônica com teste ergométrico negativo (há menos de 3 meses)</span><span class="rc-pts">+4</span></label><label for="rc-9"><input type="checkbox" id="rc-9" data-pts="4"><span>Aneurisma de aorta assintomático, sem indicação cirúrgica</span><span class="rc-pts">+4</span></label><label for="rc-10"><input type="checkbox" id="rc-10" data-pts="5"><span>Edema agudo de pulmão secundário a insuficiência cardíaca há mais de 1 semana</span><span class="rc-pts">+5</span></label><label for="rc-11"><input type="checkbox" id="rc-11" data-pts="5"><span>Mau estado clínico geral: K<sup>+</sup> &lt; 3,0 mEq/L ou HCO<sub>3</sub><sup>-</sup> &lt; 20 mEq/L; pO<sub>2</sub> &lt; 60 mmHg ou pCO<sub>2</sub> &gt; 50 mmHg; ureia &gt; 50 mg/dL ou creatinina &gt; 2,3 mg/dL; AST elevada ou doença hepática ativa</span><span class="rc-pts">+5</span></label><label for="rc-12"><input type="checkbox" id="rc-12" data-pts="10"><span>Infarto do miocárdio há menos de 6 meses, fora da fase aguda</span><span class="rc-pts">+10</span></label><label for="rc-13"><input type="checkbox" id="rc-13" data-pts="10"><span>Angina estável atual</span><span class="rc-pts">+10</span></label><label for="rc-14"><input type="checkbox" id="rc-14" data-pts="10"><span>Episódio de angina instável há menos de 3 meses, atualmente ausente</span><span class="rc-pts">+10</span></label><label for="rc-15"><input type="checkbox" id="rc-15" data-pts="10"><span>Edema agudo de pulmão secundário a insuficiência cardíaca há menos de 1 semana</span><span class="rc-pts">+10</span></label><label for="rc-16"><input type="checkbox" id="rc-16" data-pts="10"><span>Taquiarritmia supraventricular sustentada com resposta ventricular elevada; arritmia ventricular sustentada repetitiva documentada; história de fibrilação ventricular ou de morte súbita abortada (há mais de 3 meses); portador de cardiodesfibrilador implantável</span><span class="rc-pts">+10</span></label><label for="rc-17"><input type="checkbox" id="rc-17" data-pts="10"><span>Angina classe III da Canadian Cardiovascular Society (CCS)</span><span class="rc-pts">+10</span></label><label for="rc-18"><input type="checkbox" id="rc-18" data-pts="10"><span>Cirurgia de emergência</span><span class="rc-pts">+10</span></label><label for="rc-19"><input type="checkbox" id="rc-19" data-pts="10"><span>Cirurgia de transplante: receptor de rim ou fígado</span><span class="rc-pts">+10</span></label><label for="rc-20"><input type="checkbox" id="rc-20" data-pts="10"><span>Estenose mitral grave</span><span class="rc-pts">+10</span></label><label for="rc-21"><input type="checkbox" id="rc-21" data-pts="20"><span>Angina classe IV da Canadian Cardiovascular Society (CCS)</span><span class="rc-pts">+20</span></label><label for="rc-22"><input type="checkbox" id="rc-22" data-pts="20"><span>Estenose aórtica crítica</span><span class="rc-pts">+20</span></label><label for="rc-23"><input type="checkbox" id="rc-23" data-pts="20"><span>Insuficiência cardíaca classe IV</span><span class="rc-pts">+20</span></label><label for="rc-24"><input type="checkbox" id="rc-24" data-pts="20"><span>Infarto agudo do miocárdio (fase aguda)</span><span class="rc-pts">+20</span></label><label for="rc-25"><input type="checkbox" id="rc-25" data-pts="20"><span>Episódio recente de fibrilação ventricular ou morte súbita abortada em paciente sem cardiodesfibrilador implantável</span><span class="rc-pts">+20</span></label><label for="rc-26"><input type="checkbox" id="rc-26" data-pts="20"><span>Cirurgia de transplante: receptor de pulmão</span><span class="rc-pts">+20</span></label></div></div><div class="mica-result" aria-live="polite"><span class="mica-label">EMAPO</span><div class="rc-row"><strong id="rc-score">0 pontos</strong><span class="rc-class" id="rc-class"></span></div><span id="rc-note"></span><button type="button" class="rc-reset" id="rc-reset">Limpar</button></div><p class="mica-disclaimer">O Risco MED calcula a pontuação e mostra a classe publicada para o índice; o médico analisa e decide.</p></form>
+            <div class="rc-cta"><p><strong>Este é 1 de 23 índices.</strong> No Risco MED, os mesmos dados calculam o EMAPO e outros 22 índices de uma vez, e o laudo sai completo e profissional, com a sua logo e assinatura digital. O sistema calcula e mostra os resultados; o médico revisa e decide.</p><a href="https://risco.med.br/#cadastro" class="btn btn-primary" data-cta="calc-depois">Criar conta com R$ 5,00 de crédito</a></div>
+            <script>
+(function () {
+    var f = document.getElementById('rc-calc');
+    if (!f) return;
+    var bands = JSON.parse(f.getAttribute('data-bands'));
+    var links = JSON.parse(f.getAttribute('data-links') || '{}');
+    function syncLinks() {
+        Object.keys(links).forEach(function (target) {
+            var t = document.getElementById(target), on = links[target].some(function (id) { return document.getElementById(id).checked; });
+            if (on) { t.checked = true; t.disabled = true; t.closest('label').classList.add('rc-auto'); t.dataset.auto = '1'; }
+            else if (t.dataset.auto) { t.checked = false; t.disabled = false; t.closest('label').classList.remove('rc-auto'); delete t.dataset.auto; }
+        });
+    }
+    function sum(scope) {
+        var s = 0;
+        f.querySelectorAll((scope ? '[data-step="' + scope + '"] ' : '') + 'input[type=checkbox]:checked').forEach(function (i) { s += parseFloat(i.getAttribute('data-pts')) || 0; });
+        f.querySelectorAll((scope ? '[data-step="' + scope + '"] ' : '') + 'select').forEach(function (i) { s += parseFloat(i.value) || 0; });
+        return s;
+    }
+    function pick(n) { var b = bands[0]; bands.forEach(function (x) { if (n >= x[0]) b = x; }); return b; }
+    function update() {
+        syncLinks();
+        var total, b, txt, extra = '';
+        if (f.getAttribute('data-mode') === 'acp') {
+            var detsky = sum('1');
+            if (detsky > 15) { b = bands[2]; txt = 'Detsky ' + detsky + ' pontos'; }
+            else { var n = f.querySelectorAll('[data-step="2"] input:checked').length; b = n >= 2 ? bands[1] : bands[0];
+                   txt = 'Detsky ' + detsky + ' pontos'; extra = ' · ' + n + (n === 1 ? ' variável' : ' variáveis') + ' de Eagle/Vanzetto'; }
+        } else {
+            total = sum(); b = pick(total); txt = total + (total === 1 ? ' ponto' : ' pontos');
+        }
+        document.getElementById('rc-score').textContent = txt;
+        document.getElementById('rc-class').textContent = b[1];
+        document.getElementById('rc-note').textContent = b[2] + extra;
+    }
+    f.addEventListener('change', update);
+    f.addEventListener('submit', function (e) { e.preventDefault(); });
+    document.getElementById('rc-reset').addEventListener('click', function () {
+        f.querySelectorAll('input[type=checkbox]').forEach(function (i) { i.checked = false; i.disabled = false; delete i.dataset.auto; i.closest('label').classList.remove('rc-auto'); });
+        f.querySelectorAll('select').forEach(function (s) { s.selectedIndex = 0; });
+        update();
+    });
+    var used = false;
+    f.addEventListener('change', function () {
+        if (used || typeof gtag === 'undefined') return;
+        used = true;
+        gtag('event', 'calculator_use', { 'event_category': 'engagement', 'event_label': location.pathname });
+    });
+    update();
+})();
+</script>
+
 
             <h2>O que é o EMAPO</h2>
             <p>O escore foi desenvolvido e validado no Brasil, em um estudo multicêntrico publicado em 2007 (Pinho C et al., Clinics). Ele reúne 27 variáveis clínicas e cirúrgicas, um número maior que o de índices como Lee ou Goldman, o que o torna mais detalhado para pacientes com várias comorbidades.</p>
